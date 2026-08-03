@@ -14,9 +14,6 @@
   const themeToggle = document.getElementById('themeToggle');
   const langIndicator = langToggle.querySelector('.lang-indicator');
   const allNavAnchors = navLinks.querySelectorAll('a');
-  const pubFilterBtns = document.querySelectorAll('.pub-filter-btn');
-  const pubItems = document.querySelectorAll('.pub-item');
-
   // ----- State -----
   let currentLang = localStorage.getItem('lang') || 'zh';
   let currentTheme = localStorage.getItem('theme') || 'light';
@@ -130,25 +127,6 @@
     });
 
     lastScrollY = scrollY;
-  });
-
-  // ----- Publication Filters -----
-  pubFilterBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      // Update active button
-      pubFilterBtns.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const year = btn.getAttribute('data-year');
-
-      pubItems.forEach((item) => {
-        if (year === 'all' || item.getAttribute('data-year') === year) {
-          item.style.display = '';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    });
   });
 
   // ----- Scroll Reveal Animation -----
