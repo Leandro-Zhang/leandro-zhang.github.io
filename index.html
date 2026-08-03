@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh" data-lang="zh" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lehan Zhang - Personal Academic Homepage">
+  <title>Lehan Zhang | 张乐涵</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">Lehan Zhang</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n-nav="about">About</a></li>
+        <li><a href="#research" data-i18n-nav="research">Research</a></li>
+        <li><a href="#publications" data-i18n-nav="publications">Publications</a></li>
+        <li><a href="#education" data-i18n-nav="education">Education</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-icon" id="langToggle" aria-label="Switch Language" title="Switch Language">
+          <span class="lang-indicator">中</span>
+        </button>
+        <button class="btn-icon" id="themeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="btn-icon hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <header id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-photo">
+        <!-- Replace with your photo: <img src="assets/images/photo.jpg" alt="Lehan Zhang"> -->
+        <div class="photo-placeholder">LZ</div>
+      </div>
+      <h1 class="hero-name">Lehan Zhang</h1>
+      <p class="hero-name-zh">张乐涵</p>
+      <p class="hero-title zh">博士研究生 / 研究员</p>
+      <p class="hero-title en">Ph.D. Student / Researcher</p>
+      <p class="hero-affiliation zh">某某大学 · 计算机科学与技术学院</p>
+      <p class="hero-affiliation en">School of Computer Science, University Name</p>
+      <div class="hero-social">
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener" class="social-link" title="Google Scholar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
+        </a>
+        <a href="https://orcid.org/" target="_blank" rel="noopener" class="social-link" title="ORCID">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 01-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-3.825-3.722h-2.494z"/></svg>
+        </a>
+        <a href="https://github.com/LehanZhang2004" target="_blank" rel="noopener" class="social-link" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:lehanzhang@example.com" class="social-link" title="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title zh">个人简介</h2>
+      <h2 class="section-title en">About Me</h2>
+      <div class="about-content">
+        <div class="about-text zh">
+          <p>我是张乐涵，目前是某某大学计算机科学与技术学院的博士研究生，导师为XXX教授。我的研究方向主要集中在<strong>人工智能</strong>、<strong>机器学习</strong>以及<strong>自然语言处理</strong>等领域。</p>
+          <p>在此之前，我于2024年获得某某大学计算机科学学士学位。我的研究兴趣包括但不限于：大语言模型的对齐与安全、多模态学习、以及AI在教育领域的应用。</p>
+        </div>
+        <div class="about-text en">
+          <p>I am Lehan Zhang, currently a Ph.D. student at the School of Computer Science, University Name, advised by Prof. XXX. My research focuses on <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>Natural Language Processing</strong>.</p>
+          <p>Previously, I received my B.S. degree in Computer Science from University Name in 2024. My research interests include but are not limited to: LLM alignment and safety, multimodal learning, and AI applications in education.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Research Section ===== -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title zh">研究方向</h2>
+      <h2 class="section-title en">Research Interests</h2>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="card-icon">🤖</div>
+          <h3 class="zh">大语言模型</h3>
+          <h3 class="en">Large Language Models</h3>
+          <p class="zh">探索大语言模型的对齐技术、安全机制与可解释性，构建更加可靠和可控的AI系统。</p>
+          <p class="en">Exploring alignment techniques, safety mechanisms, and interpretability of LLMs to build more reliable and controllable AI systems.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-icon">🧠</div>
+          <h3 class="zh">机器学习</h3>
+          <h3 class="en">Machine Learning</h3>
+          <p class="zh">研究深度学习、强化学习等前沿机器学习方法，推动AI基础理论的创新。</p>
+          <p class="en">Advancing deep learning, reinforcement learning, and other cutting-edge ML methods to push the frontiers of AI theory.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-icon">💬</div>
+          <h3 class="zh">自然语言处理</h3>
+          <h3 class="en">Natural Language Processing</h3>
+          <p class="zh">关注自然语言理解与生成、多语言处理以及人机对话系统的研究。</p>
+          <p class="en">Focusing on natural language understanding, generation, multilingual processing, and conversational AI systems.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-icon">🎓</div>
+          <h3 class="zh">AI + 教育</h3>
+          <h3 class="en">AI + Education</h3>
+          <p class="zh">将人工智能技术应用于教育场景，开发智能化教学工具与个性化学习系统。</p>
+          <p class="en">Applying AI technologies to educational contexts, developing intelligent tutoring tools and personalized learning systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Publications Section ===== -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title zh">论文发表</h2>
+      <h2 class="section-title en">Publications</h2>
+
+      <!-- Year filters -->
+      <div class="pub-filters">
+        <button class="pub-filter-btn active" data-year="all">All</button>
+        <button class="pub-filter-btn" data-year="2026">2026</button>
+        <button class="pub-filter-btn" data-year="2025">2025</button>
+        <button class="pub-filter-btn" data-year="2024">2024</button>
+      </div>
+
+      <ul class="pub-list" id="pubList">
+        <li class="pub-item" data-year="2026">
+          <div class="pub-number">1</div>
+          <div class="pub-info">
+            <h3 class="pub-title zh">论文标题示例一：基于大语言模型的多模态对齐方法</h3>
+            <h3 class="pub-title en">Example Paper Title One: A Multi-modal Alignment Method Based on Large Language Models</h3>
+            <p class="pub-authors"><strong>Lehan Zhang</strong>, Author Two, Author Three</p>
+            <p class="pub-venue"><span class="pub-tag">NeurIPS 2026</span></p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">📄 PDF</a>
+              <a href="#" class="pub-link">💻 Code</a>
+              <a href="#" class="pub-link">📖 BibTeX</a>
+            </div>
+          </div>
+        </li>
+        <li class="pub-item" data-year="2025">
+          <div class="pub-number">2</div>
+          <div class="pub-info">
+            <h3 class="pub-title zh">论文标题示例二：面向教育场景的个性化学习推荐系统</h3>
+            <h3 class="pub-title en">Example Paper Title Two: Personalized Learning Recommendation System for Educational Scenarios</h3>
+            <p class="pub-authors">Author One, <strong>Lehan Zhang</strong>, Author Three</p>
+            <p class="pub-venue"><span class="pub-tag">ICML 2025</span></p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">📄 PDF</a>
+              <a href="#" class="pub-link">💻 Code</a>
+              <a href="#" class="pub-link">📖 BibTeX</a>
+            </div>
+          </div>
+        </li>
+        <li class="pub-item" data-year="2024">
+          <div class="pub-number">3</div>
+          <div class="pub-info">
+            <h3 class="pub-title zh">论文标题示例三：基于对比学习的跨语言知识迁移</h3>
+            <h3 class="pub-title en">Example Paper Title Three: Cross-lingual Knowledge Transfer via Contrastive Learning</h3>
+            <p class="pub-authors"><strong>Lehan Zhang</strong>, Author Two</p>
+            <p class="pub-venue"><span class="pub-tag">ACL 2024</span></p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">📄 PDF</a>
+              <a href="#" class="pub-link">💻 Code</a>
+              <a href="#" class="pub-link">📖 BibTeX</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Education & Experience Section ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title zh">教育及工作经历</h2>
+      <h2 class="section-title en">Education & Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 – Present</span>
+            <h3 class="zh">博士研究生 · 计算机科学与技术</h3>
+            <h3 class="en">Ph.D. in Computer Science</h3>
+            <p class="zh">某某大学 · 计算机科学与技术学院 · 导师：XXX教授</p>
+            <p class="en">University Name · School of Computer Science · Advisor: Prof. XXX</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 – 2024</span>
+            <h3 class="zh">本科 · 计算机科学与技术</h3>
+            <h3 class="en">B.S. in Computer Science</h3>
+            <p class="zh">某某大学 · 计算机科学与技术学院</p>
+            <p class="en">University Name · School of Computer Science</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 Summer</span>
+            <h3 class="zh">研究实习生</h3>
+            <h3 class="en">Research Intern</h3>
+            <p class="zh">某某研究院 / 某某科技公司 · 从事自然语言处理相关研究</p>
+            <p class="en">Research Lab / Tech Company · Research on Natural Language Processing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-cv">
+        <a href="cv.pdf" class="btn-cv" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span class="zh">下载简历 (PDF)</span>
+          <span class="en">Download CV (PDF)</span>
+        </a>
+      </div>
+      <div class="footer-contact">
+        <span>📧 lehanzhang@example.com</span>
+      </div>
+      <p class="footer-copy">© 2026 Lehan Zhang. <span class="zh">保留所有权利。</span><span class="en">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
