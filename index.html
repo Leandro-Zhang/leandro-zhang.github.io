@@ -3,183 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lehan Zhang - Personal Academic Homepage">
-  <title>Lehan Zhang | 张乐涵</title>
+  <meta name="description" content="张乐涵的个人学术主页">
+  <title>张乐涵 Lehan Zhang</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎓</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎓</text></svg>">
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-brand">Lehan Zhang</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about" data-i18n-nav="about">About</a></li>
-        <li><a href="#research" data-i18n-nav="research">Research</a></li>
-        <li><a href="#publications" data-i18n-nav="publications">Publications</a></li>
-        <li><a href="#education" data-i18n-nav="education">Education</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button class="btn-icon" id="langToggle" aria-label="Switch Language" title="Switch Language">
-          <span class="lang-indicator">中</span>
-        </button>
-        <button class="btn-icon" id="themeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-        </button>
-        <button class="btn-icon hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
+<main class="page">
 
-  <!-- ===== Hero Section ===== -->
-  <header id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-photo">
-        <img src="assets/images/photo.jpg" alt="Lehan Zhang">
+  <!-- ====== Header ====== -->
+  <header class="header">
+    <div class="header-row">
+      <div class="header-text">
+        <h1 class="name">张乐涵 <span class="name-en">Lehan Zhang</span></h1>
+        <p class="tagline zh">多模态大模型 · 具身智能</p>
+        <p class="tagline en">Multimodal LLMs · Embodied Intelligence</p>
+        <p class="bio-main zh">
+          2026 年毕业于北京服装学院信息管理与信息系统专业，获<strong>北京市优秀毕业生</strong>称号。
+          目前正在备考<strong>中国科学院大学（UCAS）计算技术研究所</strong>人工智能专硕。
+        </p>
+        <p class="bio-main en">
+          Graduated in 2026 from Beijing Institute of Fashion Technology with a B.S. in Information Management &amp; Information Systems,
+          honored as a <strong>Beijing Outstanding Graduate</strong>. Currently preparing for the M.S. in AI at
+          <strong>Institute of Computing Technology, UCAS</strong>.
+        </p>
+        <p class="bio-sub zh">
+          研究方向涵盖多模态大模型与具身智能。我认为<strong>具身智能的大脑能力高度依赖多模态大模型</strong>，
+          二者相辅相成。同时通过 <a href="https://ysyx.oscc.cc/" target="_blank" rel="noopener">ysyx</a>
+          项目学习处理器设计，探索从底层硬件到上层算法的完整技术栈。
+        </p>
+        <p class="bio-sub en">
+          My research spans multimodal LLMs and embodied intelligence. I believe
+          <strong>the brain of embodied agents fundamentally relies on multimodal LLMs</strong> — the two go hand in hand.
+          I also study processor design through the <a href="https://ysyx.oscc.cc/" target="_blank" rel="noopener">ysyx</a> project,
+          exploring the full technology stack from hardware to algorithms.
+        </p>
+        <div class="contact-row">
+          <a href="mailto:lehanzhang2004@gmail.com">📧 lehanzhang2004@gmail.com</a>
+          <a href="https://github.com/LehanZhang2004" target="_blank" rel="noopener">💻 GitHub</a>
+          <a href="cv.pdf" download>📄 CV</a>
+        </div>
       </div>
-      <h1 class="hero-name">Lehan Zhang</h1>
-      <p class="hero-name-zh">张乐涵</p>
-      <p class="hero-title zh">本科生 / 研究爱好者</p>
-      <p class="hero-title en">Undergraduate / Researcher</p>
-      <p class="hero-affiliation zh">专注于具身智能 & 多模态大模型</p>
-      <p class="hero-affiliation en">Focusing on Embodied Intelligence & Multimodal LLMs</p>
-      <div class="hero-social">
-        <a href="https://scholar.google.com/" target="_blank" rel="noopener" class="social-link" title="Google Scholar">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
-        </a>
-        <a href="https://orcid.org/" target="_blank" rel="noopener" class="social-link" title="ORCID">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 01-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-3.825-3.722h-2.494z"/></svg>
-        </a>
-        <a href="https://github.com/LehanZhang2004" target="_blank" rel="noopener" class="social-link" title="GitHub">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-        </a>
-        <a href="mailto:lehanzhang2004@gmail.com" class="social-link" title="Email">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
+      <div class="header-photo">
+        <img src="assets/images/avatar.jpg" alt="张乐涵">
+        <span class="photo-label">张乐涵 · Lehan Zhang</span>
       </div>
     </div>
   </header>
 
-  <!-- ===== About Section ===== -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title zh">个人简介</h2>
-      <h2 class="section-title en">About Me</h2>
-      <div class="about-content">
-        <div class="about-text zh">
-          <p>我是张乐涵，目前是一名计算机科学与技术专业的本科生。我对<strong>具身智能（Embodied Intelligence）</strong>和<strong>多模态大模型（Multimodal LLMs）</strong>充满热情，致力于探索智能体如何在与物理世界的交互中学习与进化。</p>
-          <p>我的研究经历主要围绕多模态感知与理解、机器人操作策略学习、以及视觉-语言-动作联合建模。此前我参与过一些实验性研究项目，由于更换电脑等原因，部分早期代码未能保留，目前我正重新整理并推进新的研究方向。</p>
-          <p>我有一篇论文已提交至 arXiv，目前正在审核中。欢迎通过邮件与我交流讨论！</p>
+  <!-- ====== News ====== -->
+  <section class="sec">
+    <h2 class="sec-title zh">📢 动态</h2>
+    <h2 class="sec-title en">📢 News</h2>
+    <div class="news-list">
+      <div class="news-item"><span class="news-tag">2026.08</span><span class="zh">开始参与 <a href="https://ysyx.oscc.cc/" target="_blank" rel="noopener">ysyx</a> 项目，系统学习处理器设计</span><span class="en">Started the <a href="https://ysyx.oscc.cc/" target="_blank" rel="noopener">ysyx</a> project on processor design</span></div>
+      <div class="news-item"><span class="news-tag">2026.08</span><span class="zh">MRAFnd 论文上线 arXiv：<a href="https://arxiv.org/abs/2608.01430" target="_blank" rel="noopener">2608.01430</a></span><span class="en">MRAFnd on arXiv: <a href="https://arxiv.org/abs/2608.01430" target="_blank" rel="noopener">2608.01430</a></span></div>
+      <div class="news-item"><span class="news-tag">2026.06</span><span class="zh">本科毕业，获<strong>北京市优秀毕业生</strong>称号 🎓</span><span class="en">Graduated with <strong>Beijing Outstanding Graduate</strong> honors 🎓</span></div>
+      <div class="news-item"><span class="news-tag">2026.01</span><span class="zh">聚焦多模态大模型与具身智能方向</span><span class="en">Focusing on multimodal LLMs &amp; embodied intelligence</span></div>
+      <div class="news-item"><span class="news-tag">2025.10</span><span class="zh">论文被 <strong>MMM 2026</strong> 接收 🎉</span><span class="en">Paper accepted at <strong>MMM 2026</strong> 🎉</span></div>
+    </div>
+  </section>
+
+  <!-- ====== Education ====== -->
+  <section class="sec">
+    <h2 class="sec-title zh">📖 教育</h2>
+    <h2 class="sec-title en">📖 Education</h2>
+    <div class="edu-list">
+      <div class="edu-item">
+        <span class="edu-date">2026 – 至今</span>
+        <div>
+          <span class="zh">备考 <strong>中国科学院大学（UCAS）计算技术研究所</strong> 人工智能专硕</span>
+          <span class="en">Preparing for M.S. in AI, <strong>Institute of Computing Technology, UCAS</strong></span>
         </div>
-        <div class="about-text en">
-          <p>I am Lehan Zhang, currently an undergraduate student in Computer Science. I am passionate about <strong>Embodied Intelligence</strong> and <strong>Multimodal Large Language Models</strong>, exploring how intelligent agents learn and evolve through interaction with the physical world.</p>
-          <p>My research experience revolves around multimodal perception and understanding, robot manipulation policy learning, and vision-language-action joint modeling. I have worked on several experimental research projects — some early code was unfortunately lost when I switched computers, and I am currently reorganizing and pursuing new research directions.</p>
-          <p>I have a paper submitted to arXiv, currently under review. Feel free to reach out via email for discussions!</p>
+      </div>
+      <div class="edu-item">
+        <span class="edu-date">2022 – 2026</span>
+        <div>
+          <span class="zh"><strong>北京服装学院</strong> · 信息管理与信息系统 本科</span>
+          <span class="en"><strong>BIFT</strong> · B.S. in Information Management &amp; Information Systems</span>
+          <span class="edu-detail zh">北京市优秀毕业生</span>
+          <span class="edu-detail en">Beijing Outstanding Graduate</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Research Section ===== -->
-  <section id="research" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title zh">研究方向</h2>
-      <h2 class="section-title en">Research Interests</h2>
-      <div class="research-grid">
-        <div class="research-card">
-          <div class="card-icon">🤖</div>
-          <h3 class="zh">具身智能</h3>
-          <h3 class="en">Embodied Intelligence</h3>
-          <p class="zh">探索智能体在物理世界中的感知、推理与行动能力。研究涵盖机器人操作策略学习、基于视觉的物体操纵、Sim-to-Real 迁移，以及利用多模态感知实现复杂环境下的自主决策。关注如何让机器人像人类一样，通过与环境的实时交互来学习和适应新任务。</p>
-          <p class="en">Exploring how agents perceive, reason, and act in the physical world. My research covers robot manipulation policy learning, vision-based object manipulation, Sim-to-Real transfer, and autonomous decision-making in complex environments via multimodal perception. I focus on enabling robots to learn and adapt to new tasks through real-time interaction with the environment — much like humans do.</p>
-        </div>
-        <div class="research-card">
-          <div class="card-icon">🧠</div>
-          <h3 class="zh">多模态大模型</h3>
-          <h3 class="en">Multimodal LLMs</h3>
-          <p class="zh">研究视觉-语言-动作（VLA）联合建模，将大语言模型的推理能力扩展至多模态场景。方向包括：多模态指令跟随、视觉 grounding、视频理解与生成、以及将 LLM 作为具身智能任务规划的核心引擎。致力于构建能够同时理解图像、语言和物理动作的统一模型框架。</p>
-          <p class="en">Researching vision-language-action (VLA) joint modeling, extending the reasoning capabilities of large language models to multimodal scenarios. Directions include multimodal instruction following, visual grounding, video understanding and generation, and leveraging LLMs as the core planning engine for embodied tasks. I aim to build unified model frameworks that simultaneously comprehend images, language, and physical actions.</p>
-        </div>
+  <!-- ====== Research Interests (Click to Expand) ====== -->
+  <section class="sec">
+    <h2 class="sec-title zh">🔬 研究方向</h2>
+    <h2 class="sec-title en">🔬 Research Interests</h2>
+    <p class="rc-hint zh">点击卡片展开细分方向</p>
+    <p class="rc-hint en">Click a card to expand</p>
+
+    <!-- Two main direction cards -->
+    <div class="research-main-grid">
+      <!-- Card: 多模态大模型 -->
+      <div class="research-card research-card--main" data-group="mm" role="button" tabindex="0">
+        <div class="rc-icon">🧠</div>
+        <h3 class="zh">多模态大模型</h3>
+        <h3 class="en">Multimodal LLMs</h3>
+        <p class="zh">多模态感知理解、跨模态生成与检索增强。研究如何融合视觉、语言等多种模态信息，构成具身智能的「大脑」基础。</p>
+        <p class="en">Multimodal perception &amp; understanding, cross-modal generation, and retrieval augmentation. Building the foundational "brain" for embodied intelligence by fusing vision, language, and other modalities.</p>
+        <span class="rc-expand-icon">+</span>
+      </div>
+
+      <!-- Card: 具身智能 -->
+      <div class="research-card research-card--main" data-group="ei" role="button" tabindex="0">
+        <div class="rc-icon">🤖</div>
+        <h3 class="zh">具身智能</h3>
+        <h3 class="en">Embodied Intelligence</h3>
+        <p class="zh">从芯片设计到系统架构再到算法策略的完整技术栈。以多模态大模型为大脑，驱动机器人感知、决策与行动。</p>
+        <p class="en">Full technology stack from chip design to system architecture to algorithm strategies. Multimodal LLMs as the brain driving robot perception, planning, and action.</p>
+        <span class="rc-expand-icon">+</span>
+      </div>
+    </div>
+
+    <!-- Sub-cards for 多模态大模型 (hidden by default) -->
+    <div class="research-sub-grid" id="sub-mm" hidden>
+      <div class="research-card research-card--sub sub-mm-perception">
+        <div class="rc-icon">👁️</div>
+        <h3 class="zh">多模态感知</h3>
+        <h3 class="en">Multimodal Perception</h3>
+        <p class="zh">多模态信息理解、视觉 grounding、跨模态检索与对齐。研究如何让模型真正"看懂"并理解多源异构数据。</p>
+        <p class="en">Multimodal understanding, visual grounding, cross-modal retrieval &amp; alignment. Teaching models to truly "see" and comprehend heterogeneous data.</p>
+        <span class="rc-sub-tag tag-perception zh">感知</span>
+        <span class="rc-sub-tag tag-perception en">Perception</span>
+      </div>
+      <div class="research-card research-card--sub sub-mm-generation">
+        <div class="rc-icon">✨</div>
+        <h3 class="zh">多模态生成</h3>
+        <h3 class="en">Multimodal Generation</h3>
+        <p class="zh">文生图/文生视频、多模态内容创作、视觉-语言联合生成。探索从理解到创造的跨越。</p>
+        <p class="en">Text-to-image/video, multimodal content creation, vision-language joint generation. Bridging from understanding to creation.</p>
+        <span class="rc-sub-tag tag-generation zh">生成</span>
+        <span class="rc-sub-tag tag-generation en">Generation</span>
+      </div>
+    </div>
+
+    <!-- Sub-cards for 具身智能 (hidden by default) -->
+    <div class="research-sub-grid research-sub-grid--3col" id="sub-ei" hidden>
+      <div class="research-card research-card--sub sub-ei-chip">
+        <div class="rc-icon">💾</div>
+        <h3 class="zh">处理器与芯片架构</h3>
+        <h3 class="en">Processor &amp; Chip Architecture</h3>
+        <p class="zh">面向 AI/机器人负载的处理器设计与 SoC 架构。通过 <a href="https://ysyx.oscc.cc/" target="_blank" rel="noopener">ysyx</a> 学习 RISC-V 处理器设计。</p>
+        <p class="en">Processor and SoC design for AI/robotics workloads. Studying RISC-V processor design through <a href="https://ysyx.oscc.cc/" target="_blank" rel="noopener">ysyx</a>.</p>
+        <span class="rc-sub-tag tag-chip zh">芯片</span>
+        <span class="rc-sub-tag tag-chip en">Chip</span>
+      </div>
+      <div class="research-card research-card--sub sub-ei-system">
+        <div class="rc-icon">⚙️</div>
+        <h3 class="zh">机器人系统与集成</h3>
+        <h3 class="en">Robotics Systems &amp; Integration</h3>
+        <p class="zh">具身智能系统的软硬件协同设计，传感器融合、实时控制、Sim-to-Real 迁移等系统层面的整合。</p>
+        <p class="en">Hardware-software co-design for embodied systems: sensor fusion, real-time control, Sim-to-Real transfer, and system-level integration.</p>
+        <span class="rc-sub-tag tag-system zh">系统</span>
+        <span class="rc-sub-tag tag-system en">System</span>
+      </div>
+      <div class="research-card research-card--sub sub-ei-algo">
+        <div class="rc-icon">🎯</div>
+        <h3 class="zh">世界模型与 VLA</h3>
+        <h3 class="en">World Models &amp; VLA</h3>
+        <p class="zh">世界模型（World Model）构建、视觉-语言-动作（VLA）联合建模与机器人操作策略学习。涵盖环境理解、行为预测到运动规划的完整算法链路。</p>
+        <p class="en">World model construction, Vision-Language-Action (VLA) joint modeling, and robot manipulation policy learning — a complete algorithmic pipeline from environment understanding to behavior prediction and motion planning.</p>
+        <span class="rc-sub-tag tag-algo zh">算法</span>
+        <span class="rc-sub-tag tag-algo en">Algorithm</span>
       </div>
     </div>
   </section>
 
-  <!-- ===== Publications Section ===== -->
-  <section id="publications" class="section">
-    <div class="container">
-      <h2 class="section-title zh">论文发表</h2>
-      <h2 class="section-title en">Publications</h2>
+  <!-- ====== Publications ====== -->
+  <section class="sec">
+    <h2 class="sec-title zh">📝 论文</h2>
+    <h2 class="sec-title en">📝 Publications</h2>
 
-      <ul class="pub-list" id="pubList">
-        <li class="pub-item">
-          <div class="pub-number">1</div>
-          <div class="pub-info">
-            <h3 class="pub-title zh">[arXiv 预印本] 具身智能与多模态大模型相关研究</h3>
-            <h3 class="pub-title en">[arXiv Preprint] Research on Embodied Intelligence and Multimodal LLMs</h3>
-            <p class="pub-authors"><strong>Lehan Zhang</strong></p>
-            <p class="pub-venue"><span class="pub-tag">arXiv (under review)</span></p>
-            <p class="pub-note zh" style="color: var(--color-text-alt); font-size: 0.88rem; margin-top: 6px;">📌 论文已提交至 arXiv，正在审核中，链接将在审核通过后更新。</p>
-            <p class="pub-note en" style="color: var(--color-text-alt); font-size: 0.88rem; margin-top: 6px;">📌 Submitted to arXiv, currently under review. Link will be updated once approved.</p>
-          </div>
-        </li>
-      </ul>
-      <p class="zh" style="text-align: center; color: var(--color-text-alt); margin-top: 32px; font-style: italic;">更多研究成果即将上线，敬请期待！</p>
-      <p class="en" style="text-align: center; color: var(--color-text-alt); margin-top: 32px; font-style: italic;">More research coming soon — stay tuned!</p>
+    <!-- Category: 多模态大模型 -->
+    <div class="pub-section">
+      <div class="pub-cat-header">
+        <span class="pub-cat-dot" style="background:var(--color-perception);"></span>
+        <span class="zh"><strong>多模态大模型</strong></span>
+        <span class="en"><strong>Multimodal LLMs</strong></span>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-card-top">
+          <h3 class="pub-title">MRAFnd: Multimodal Retrieval-Augmented Framework for Zero-Shot Fake News Detection</h3>
+          <span class="pub-type-tag tag-perception"><span class="zh">感知</span><span class="en">Perception</span></span>
+        </div>
+        <p class="pub-authors"><strong>Lehan Zhang</strong>, Yinlei Cheng, Shiqi Hu, Yiheng Zhou, Shangxi Li, Naidong Zhao</p>
+        <p class="pub-desc zh">提出基于多模态检索增强的零样本假新闻检测框架，无需训练即可跨域识别虚假信息。</p>
+        <p class="pub-desc en">A multimodal retrieval-augmented framework for zero-shot fake news detection, enabling cross-domain identification without training.</p>
+        <div class="pub-meta">
+          <span class="pub-venue">✅ MMM 2026</span>
+          <span class="pub-links">[<a href="https://arxiv.org/abs/2608.01430" target="_blank" rel="noopener">arXiv</a>]</span>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <!-- ===== Education & Experience Section ===== -->
-  <section id="education" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title zh">教育及工作经历</h2>
-      <h2 class="section-title en">Education & Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2022 – Present</span>
-            <h3 class="zh">本科 · 计算机科学与技术</h3>
-            <h3 class="en">B.S. in Computer Science</h3>
-            <p class="zh">研究方向：具身智能、多模态大模型</p>
-            <p class="en">Research focus: Embodied Intelligence, Multimodal LLMs</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2023 – Present</span>
-            <h3 class="zh">独立研究者 / 项目实践</h3>
-            <h3 class="en">Independent Researcher / Project Practice</h3>
-            <p class="zh">自主开展具身智能相关实验研究，撰写学术论文并投稿至 arXiv</p>
-            <p class="en">Conducting independent research on embodied intelligence, authoring academic papers submitted to arXiv</p>
-          </div>
-        </div>
+    <!-- Category: 具身智能 (empty, Paimon) -->
+    <div class="pub-section" style="margin-top:2.4rem;">
+      <div class="pub-cat-header">
+        <span class="pub-cat-dot" style="background:var(--color-chip);"></span>
+        <span class="zh"><strong>具身智能</strong></span>
+        <span class="en"><strong>Embodied Intelligence</strong></span>
+      </div>
+
+      <div class="pub-empty">
+        <img src="assets/images/paimon.webp" alt="Paimon" class="paimon-img">
+        <p class="paimon-quote zh">「前面的区域，我正在探索！」</p>
+        <p class="paimon-quote en">"The area ahead — I'm exploring it!"</p>
+        <p class="paimon-sub zh">具身智能相关工作推进中，敬请期待。</p>
+        <p class="paimon-sub en">Embodied intelligence work in progress — stay tuned.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
+  <!-- ====== Hobbies ====== -->
+  <section class="sec">
+    <h2 class="sec-title zh">🎨 兴趣爱好</h2>
+    <h2 class="sec-title en">🎨 Hobbies</h2>
+    <p class="hobby-text">编程 💻 &nbsp;·&nbsp; 摄影 📷 &nbsp;·&nbsp; 旅行 ✈️ &nbsp;·&nbsp; 原神 🎮</p>
+    <p class="hobby-quote zh">"Stay hungry, stay foolish."</p>
+    <p class="hobby-quote en">"Stay hungry, stay foolish."</p>
+  </section>
+
+  <!-- ====== Footer ====== -->
   <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-cv">
-        <a href="cv.pdf" class="btn-cv" download>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          <span class="zh">下载简历 (PDF)</span>
-          <span class="en">Download CV (PDF)</span>
-        </a>
-      </div>
-      <div class="footer-contact">
-        <span>📧 lehanzhang2004@gmail.com</span>
-      </div>
-      <p class="footer-copy">© 2026 Lehan Zhang. <span class="zh">保留所有权利。</span><span class="en">All rights reserved.</span></p>
-    </div>
+    <p class="footer-idol zh">
+      🙌 本页面设计参考我的学术偶像
+      <a href="https://a113n-w3i.github.io/" target="_blank" rel="noopener"><strong>Xinyu Wei</strong></a>
+      和
+      <a href="https://zixiao-bios.github.io/" target="_blank" rel="noopener"><strong>Zixiao Wang</strong></a>，
+      他们的工作对我找到感兴趣的研究方向帮助很大！
+    </p>
+    <p class="footer-idol en">
+      🙌 Page design inspired by my academic idols
+      <a href="https://a113n-w3i.github.io/" target="_blank" rel="noopener"><strong>Xinyu Wei</strong></a>
+      and
+      <a href="https://zixiao-bios.github.io/" target="_blank" rel="noopener"><strong>Zixiao Wang</strong></a> —
+      their work greatly helped me discover my own research interests!
+    </p>
+    <p>© 2026 Lehan Zhang &nbsp;·&nbsp; Last updated: 2026.08</p>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+</main>
+
+<!-- Floating controls -->
+<div class="float-ctrls">
+  <button id="langToggle" class="ctrl-btn" aria-label="Switch Language">
+    <span class="zh-active">EN</span>
+    <span class="en-active">中</span>
+  </button>
+  <button id="themeToggle" class="ctrl-btn" aria-label="切换深色模式">
+    <span class="theme-icon-light">🌙</span>
+    <span class="theme-icon-dark">☀️</span>
+  </button>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
