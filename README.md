@@ -1,5 +1,5 @@
-# Lehan Zhang
+# 个人主页
 
 Personal academic homepage.
 
-🌐 **[lehanzhang2004.github.io/lehanzhang](https://lehanzhang2004.github.io/lehanzhang)**
+🌐 **[leandro-zhang.github.io](https://leandro-zhang.github.io)**
